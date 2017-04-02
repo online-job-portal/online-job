@@ -32,6 +32,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		font:bold;
 
 	}
+	#p12{
+		color: white;
+		font-size: 20px;
+		
+	}
+
 </style>
 </head>
 <body>
@@ -43,8 +49,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="content-wthree1">
 				<div class="grid-agileits1">
 					<div class="form-control"> 
-						<label class="header">Student Name <span>:</span></label>
-						<input type="text" id="name" name="name" placeholder="" title="Please enter your Full Name" required="">
+						<label class="header">First Name <span>:</span></label>
+						<input type="text" id="name" name="fname" placeholder="" title="Please enter your First Name" required="">
+					</div>
+					<div class="form-control"> 
+						<label class="header">Last Name <span>:</span></label>
+						<input type="text" id="name" name="lname" placeholder="" title="Please enter your Last Name" required="">
 					</div>
 		
 					<div class="form-control">	
@@ -52,17 +62,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="email" id="email" name="email" placeholder="" title="Please enter a Valid Email Address" required="">
 					</div>
 					
-	
-					<div class="form-control"> 
-						<label class="header">Experience <span>:</span></label>
-						<input type="text" id="orgn" name="orgn" placeholder="" title="Please enter your Company id" required="">
-					</div>
 					 <div class="form-control"> 
 						<label class="header">Date of birth<span>&nbsp :&nbsp</span></label>
 					 
-                        <input type="date" id="birthDate" name="date" required="" title="Please enter date of birth">
+                        <input type="date" id="birthDate" name="date" required="" title="Please enter date of birth" required="">
                    
 					</div>
+
                    
 					<div class="form-control"> 
 						<label class="header">Contact Number<span>:</span></label>
@@ -71,22 +77,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<br>
 					<div class="form-control">
 					<label class="header">Qualificaton<span>:</span></label> 
-						    <select required="" id="birthDate" >
+						    <select required  id="birthDate" >
                       
-                            <option value="none">Select qualificaton</option>
+                            <option value="">Select qualificaton</option>
                             <option value="graduation">graduation</option>
-                            <option value="PG">PG</option>
-                            <option value="PHD">PHD</option>
+                            <option value="PG">pg</option>
+                            <option value="PHD">phd</option>
                             </select>
 					</div>
 					 <div class="form-control"> 
 						<label class="header"> Percentage <span>:</span></label>
 						<input type="text" id="name" name="name" placeholder="" title="Please enter your Password" required="">
 					</div>
+					<div class="form-control"> 
+						<label class="header">Experience <span>:</span></label>
+						<input type="text" id="orgn" name="orgn" placeholder="" title="Please enter your Company id" required="">
+					</div>
+
+
 				</div>
 				
 				
 			</div>
+
 		   
 		   <div class="form-control">
 		    <label class="header">Your skills<span>:</span></label>
@@ -106,9 +119,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<input type="checkbox" name="vehicle" value="Bike"> <p1>jQuery</p1>
 				
 			</div>	
+				<div class="content-wthree2">
+				<div class="grid-w3layouts1">
+					<div class="w3-agile1">
+						<label class="rating">Please Specify Gender<span>:</span></label>
+						<ul>
+							<li>
+								<input type="radio" id="a-option" name="selector1" required="">
+								<label for="a-option">Male</label>
+								<div class="check"></div>
+							</li>
+							<li>
+								<input type="radio" id="b-option" name="selector1" required="">
+								<label for="b-option">Female</label>
+								<div class="check"><div class="inside"></div></div>
+							</li>
+							
+							
+						</ul>
+					</div>	
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+			
+			<div class="content-wthree3">
+			<label class="header">upload Your Photo<span>:</span></label>
+			<input type="file" name="file" title="select  your Photo" id="p12" required="">
+			</div>
+			<div class="content-wthree3">
+
+			</div>
+
 			<div class="content-wthree4">	
 				<div class="form-control">
-					<input type="submit" class="register" value="Submit">
+					<input type="submit" class="register" value="Submit" name="submit">
 					<input type="reset" class="reset" value="Reset">
 					<div class="clear"></div>
 				</div>
